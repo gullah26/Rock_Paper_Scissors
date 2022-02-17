@@ -28,6 +28,31 @@
             <button aria-label="paper" data-choice="1" class="options" id="btn-paper">Paper</button>
             <button aria-label="scissors" data-choice="2" class="options" id="btn-scissors">Scissors</button>
         </div>
+        <!--gameplay area-->
+        <div class="game-play">
+            <!--user section with user-choice display and score-->
+            <div class="user-area">
+                <!--user score-->
+                <div class="user-score">
+                    <p>1p score</p><br><span id="user-score">0</span>
+                </div>
+                <!--rock paper scissors image from https://pngset.com/download-free-png-yiceg-->
+                <img id="player-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
+            </div>
+            <span>VS</span>
+            <!--computer section with computer-choice display and score https://pngset.com/download-free-png-yiceg-->
+            <div class="cpu-area">
+                <img id="cpu-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
+                <div class="cpu-score">
+                    <!--computer score-->
+                    <p>CPU score</p><br><span id="cpu-score">0</span>
+                </div>
+            </div>
+
+        </div>
+        <!--each game play result display-->
+        <div class="result-display"><span id="result-display"></span></div>
+    </section>
     
     <script src="assets/js/script.js"></script>
 
