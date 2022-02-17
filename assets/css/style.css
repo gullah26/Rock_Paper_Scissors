@@ -91,3 +91,79 @@ color: white;
     padding: 10px;
   }
   
+  /*--selection buttons--*/
+
+#btn-rock {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 0 2px;
+    background-color: violet;
+    transition: all 0.5s;
+  }
+  
+  #btn-rock:focus {
+    outline: none;
+  }
+  
+  #btn-rock {
+    border-color: black;
+    color: black;
+  }
+  
+  #btn-rock:active,
+  #btn-rock:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #btn-paper {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    padding: px;
+    margin: 0 2px;
+    background-color: green;
+    transition: all 0.5s;
+  }
+  
+  #btn-paper:focus {
+    outline: none;
+  }
+  
+  #btn-paper {
+    border-color: black;
+    color: black;
+  }
+  
+  #btn-paper:active,
+  #btn-paper:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #btn-scissors {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 0 2px;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+  #btn-scissors:focus {
+    outline: none;
+  }
+  
+  #btn-scissors {
+    border-color: black;
+    color: black;
+  }
+  
+  #btn-scissors:active,
+  #btn-scissors:hover {
+    background-color: black;
+    color: white;
+  }
