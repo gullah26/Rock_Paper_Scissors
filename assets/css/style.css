@@ -35,3 +35,59 @@ color: white;
   border-bottom-style: double;
   border-top-style: double;
 }
+/*game play and score area*/
+.game-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .user-area {
+    display: flex;
+    margin-right: 50px;
+  }
+  
+  .cpu-area {
+    display: flex;
+    margin-left: 50px;
+  }
+  
+  .user-score,
+  .cpu-score {
+    color: white;
+    margin: 50px;
+    margin-top: 2px;
+    padding: 5px;
+  }
+  
+  .user-score span {
+    color: greenyellow;
+    font-size: 1rem;
+  }
+  
+  .user-score p {
+    color: orange;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .cpu-score span {
+    color: red;
+  }
+  
+  .cpu-score p {
+    color: blueviolet;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
