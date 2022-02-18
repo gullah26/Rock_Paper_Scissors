@@ -48,3 +48,15 @@ function playGame(playerChoice) {
   cpuImage.alt = possibleSelections[cpuChoice];
   return cpuChoice;
 }
+
+/*
+*Added a compare result function which
+*takes in an if statement
+*that checks player choice with respect
+*computer choice.*
+*/
+
+function compareResults(playerChoice, cpuChoice) {
+
+  
+}
