@@ -34,7 +34,10 @@ buttons.forEach((button) => {
 */
 
 function playGame(playerChoice) {
+  playerImage.src = `assets/images/${possibleSelections[
+    playerChoice
+  ].toLowerCase()}.png`;
+  playerImage.alt = possibleSelections[playerChoice];
 
 
-  
 }
