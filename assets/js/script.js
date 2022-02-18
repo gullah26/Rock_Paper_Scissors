@@ -39,5 +39,5 @@ function playGame(playerChoice) {
   ].toLowerCase()}.png`;
   playerImage.alt = possibleSelections[playerChoice];
 
-
+  let cpuChoice = Math.floor(Math.random() * possibleSelections.length);
 }
