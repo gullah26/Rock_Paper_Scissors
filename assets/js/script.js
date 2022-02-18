@@ -38,7 +38,7 @@ buttons.forEach((button) => {
 *Added a playgame function,
 *that takes in the value of playerchoice
 */
-
+// credit: code institue Project  Portfolio 2 Portfolio Project Scope video
 function playGame(playerChoice) {
   playerImage.src = `assets/images/${possibleSelections[
     playerChoice
@@ -82,7 +82,7 @@ switch (playerChoice) {
         break;
       case 2:
         //"rock vs scissors";
-        result.textContent.style.color = "You win!";
+        result.textContent = "You win!";
         result.style.color = "green";
         playerScore++;
         break;
