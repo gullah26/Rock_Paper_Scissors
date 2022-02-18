@@ -23,8 +23,14 @@ buttons.forEach((button) => {
   button.addEventListener("click", function () {
     const playerChoice = Number(this.getAttribute("data-choice"));
     let selection = playGame(playerChoice);
+    //check the result and update score
     compareResults(playerChoice, selection);
     updateScore();
+    //check the winner or loser
+    if (checkWinner()) {
+      playerScore = cpuScore = 0;
+      updateScore();
+  }
   });
 });
 
@@ -141,4 +147,19 @@ switch (playerChoice) {
 function updateScore() {
   document.getElementById("user-score").innerHTML = playerScore;
   document.getElementById("cpu-score").innerHTML = cpuScore;
+}
+/*
+*Added an check winner function which
+*that checks the winner after 10 game play.
+*credit: https://sebhastian.com/rock-paper-scissors-javascript/
+*/
+function checkWinner() {
+  if (playerScore === 10 || cpuScore === 10) {
+    const winner =
+      playerScore === 10
+        ? result.textContent = "You win the game! Congratulations!"
+        : result.textContent = "Game Over! You Lose!";
+    return true;
+  }
+  return false;
 }
