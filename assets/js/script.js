@@ -83,5 +83,62 @@ switch (playerChoice) {
       default:
     }
     break;
-    
+    case 1:
+      // paper
+      switch (cpuChoice) {
+        case 0:
+          //"paper vs rock"
+          result.textContent = "You win!";
+          result.style.color = "green";
+          playerScore++;
+          break;
+        case 1:
+          //"paper vs paper"
+          result.textContent = "It's a draw!";
+          result.style.color = "white";
+          break;
+        case 2:
+         //"paper vs scissors"
+          result.textContent = "You lose!";
+          result.style.color = "red";
+          cpuScore++;
+          break;
+        default:
+      }
+      break;
+    case 2:
+      // scissors
+      switch (cpuChoice) {
+        case 0:
+          //"scissors vs rock"
+          result.textContent = "You lose!";
+          result.style.color = "red";
+          cpuScore++;
+          break;
+        case 1:
+          //"scissors vs paper"
+          result.textContent = "You win!";
+          result.style.color = "green";
+          playerScore++;
+          break;
+        case 2:
+          //"scissors vs scissors"
+          result.textContent = "It's a draw!";
+          result.style.color = "white";
+          break;
+        default:
+      }
+      break;
+    default:
+  }
+}
+
+/*
+*Added an update score function which
+*that updates the score after each game.
+*/
+
+function updateScore() {
+  document.getElementById("user-score").innerHTML = playerScore;
+  document.getElementById("cpu-score").innerHTML = cpuScore;
 }

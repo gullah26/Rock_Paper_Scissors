@@ -40,7 +40,7 @@ color: white;
 #select-button {
   display: flex;
   flex-direction: column;
-  border: 5px solid white;
+  border: 10px solid blue;
   padding: 20px;
   margin: 20px;
   border-style: double;
@@ -202,7 +202,7 @@ color: white;
   
   .social-media-links {
     justify-content: flex-end;
-    margin-top: 45px;
+    margin-top: 40px;
     
   }
   
