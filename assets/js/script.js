@@ -59,5 +59,29 @@ function playGame(playerChoice) {
 function compareResults(playerChoice, cpuChoice) {
   const gamePlay = `${playerChoice} vs ${cpuChoice}`;
 // to check each player and computer conditions
-
+switch (playerChoice) {
+  case 0:
+    // rock
+    switch (cpuChoice) {
+      case 0:
+        //"rock vs rock"
+        result.textContent = "It's a draw!";
+        result.style.color = "white";
+        break;
+      case 1:
+        //"rock vs paper"
+        result.textContent = "You lose!";
+        result.style.color = "red";
+        cpuScore++;
+        break;
+      case 2:
+        //"rock vs scissors";
+        result.textContent.style.color = "You win!";
+        result.style.color = "green";
+        playerScore++;
+        break;
+      default:
+    }
+    break;
+    
 }
