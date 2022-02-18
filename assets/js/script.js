@@ -40,4 +40,11 @@ function playGame(playerChoice) {
   playerImage.alt = possibleSelections[playerChoice];
 
   let cpuChoice = Math.floor(Math.random() * possibleSelections.length);
+
+  cpuImage.src = `assets/images/${possibleSelections[
+    cpuChoice
+  ].toLowerCase()}.png`;
+  cpuImage.style.transform = "scaleX(-1)";
+  cpuImage.alt = possibleSelections[cpuChoice];
+  return cpuChoice;
 }
