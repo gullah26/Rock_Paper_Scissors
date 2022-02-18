@@ -57,6 +57,7 @@ function playGame(playerChoice) {
 */
 
 function compareResults(playerChoice, cpuChoice) {
+  const gamePlay = `${playerChoice} vs ${cpuChoice}`;
+// to check each player and computer conditions
 
-  
 }
