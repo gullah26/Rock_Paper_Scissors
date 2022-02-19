@@ -86,11 +86,6 @@ h2 {
     width: 160px;
     height: 140px;
   }
-
-  #loading img {
-    width: 50px;
-    height: 100px;
-  }
   
   .user-area {
     display: flex;
@@ -266,8 +261,8 @@ h2 {
 /*for medium screen (tablets and ipads)*/
 
 @media screen and (max-width: 810px) {
-  html, body {
-    width:100%;
+body {
+    width:95%;
 }
 
 /*--Heading--*/
@@ -279,19 +274,13 @@ h2 {
   margin: 2em;
 }
 
-.heading i {
-color: white;
-}
-
 /*--Game layout--*/
 
 .selection-area {
   display: flex;
   justify-content: center;
-  margin: auto;
-  padding: 20px;
   border: 10px solid rgb(87, 87, 7);
-  border-radius: 40px;
+  border-radius: 20px;
   border-left-style: dotted;
   border-right-style: dotted;
   border-bottom-style: double;
@@ -303,13 +292,13 @@ color: white;
   border: 10px solid blue;
   background-color: rgb(65, 59, 59);
   border-radius: 40px;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   border-style: double;
 }
 
 #select-button p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: springgreen;
 }
 
@@ -322,31 +311,28 @@ color: white;
   }
   
   img {
-    width: 150px;
-    height: 120px;
+    width: 100%;
+
   }
   
   .user-area {
     display: flex;
-    margin-right: 50px;
   }
   
   .cpu-area {
     display: flex;
-    margin-left: 50px;
   }
   
   .user-score,
   .cpu-score {
     color: white;
-    margin: 50px;
     margin-top: 2px;
-    padding: 5px;
+    padding: 10px;
   }
   
   .user-score span {
     color: greenyellow;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   .user-score p {
@@ -359,6 +345,7 @@ color: white;
   
   .cpu-score span {
     color: red;
+    font-size: 1.5rem;
   }
   
   .cpu-score p {
@@ -459,24 +446,20 @@ color: white;
   .social-networks > li {
     display: inline;    
     align-items: center;
-
-   
+    border: 1px solid white;   
   }
+
   
   .social-networks i {
     font-size: 1.5rem;
     color: #ffffff;
   }
   
-  .social-media-links {
-    justify-content: flex-end;
-    margin-top: 40px;
-    
-  }
+  
   
   #copyright {
     color: aqua;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   
 }
@@ -485,177 +468,175 @@ color: white;
 /*for smaller screen and down (phones)*/
 
 @media screen and (max-width: 390px) {  
-  html, body {
-      width:100%;
-  }
-
-  /*--Heading--*/
-
-.heading {
-  text-align: center;
-  font-size: 0.7rem;
-  color: red;
-  padding: 15px;
+  body {
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:hidden;
 }
+/*--Heading--*/
 
-.heading i {
-color: white;
+.heading{
+text-align: center;
+font-size: 0.5rem;
+color: red;
 }
 
 h2 {
-  font-size: 1rem;
+font-size: 0.3rem;
 }
 /*--Game layout--*/
 
 .selection-area {
-  display: flex;
-  border-radius: 40px;
-  border: none;
+border: none;
 }
 
 #select-button p {
-  font-size: 0.5rem;
-  color: springgreen;
+font-size: 0.3rem;
+color: springgreen;
+
 }
 
 #select-button {
-  display: flex; 
-  flex-direction: column;
-  padding: 15px;
+display: flex; 
 
 }
 /*game play and score area*/
 .game-play {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px
-  }
-  
-  img {
-    width: 80px;
-    height: 60px;
-  }
+  justify-content: center;
+  align-items: center;
+}
 
-  .user-score span {
-    color: greenyellow;
-    font-size: 1rem;
-  }
-  
-  .user-score p {
-    color: orange;
-    font-size: 0.4rem;
-    border: 1px solid white;
-    border-radius: 15px;
-    padding: 3px;
-  }
-  
-  .cpu-score span {
-    color: red;
-    font-size: 1rem;
-  }
-  
-  .cpu-score p {
-    color: white;
-    font-size: 0.4rem;
-    border: 1px solid white;
-    border-radius: 15px;
-    padding: 3px;
-  }
-  
-  /*--selection buttons--*/
+img {
+  width: 100px;
+  height: 50px;
+}
+
+.user-score span {
+  color: greenyellow;
+  font-size: 0.5rem;
+}
+
+.user-score p {
+  color: orange;
+  font-size: 0.4rem;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 3px;
+}
+
+.cpu-score span {
+  color: red;
+  font-size: 0.5rem;
+}
+
+.cpu-score p {
+  color: white;
+  font-size: 0.4rem;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 3px;
+}
+
+/*--selection buttons--*/
 
 #btn-rock {
-    width: 60px;
-    height: 25px;
-    border-radius: 10px;
-    padding: 2px;
-    margin: 5px;
-    background-color: violet;
-    transition: all 0.5s;
-  }
-  
-  #btn-rock:focus {
-    outline: none;
-  }
-  
-  #btn-rock {
-    border-color: black;
-    color: black;
-  }
-  
-  #btn-rock:active,
-  #btn-rock:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  #btn-paper {
-    width: 60px;
-    height: 25px;
-    border-radius: 10px;
-    padding: 2px;
-    margin: 5px;
-    background-color: white;
-    transition: all 0.5s;
-  }
-  
-  #btn-paper:focus {
-    outline: none;
-  }
-  
-  #btn-paper {
-    border-color: black;
-    color: black;
-  }
-  
-  #btn-paper:active,
-  #btn-paper:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  #btn-scissors {
-    width: 60px;
-    height: 25px;
-    border-radius: 10px;
-    padding: 2px;
-    margin: 5px;
-    background-color: lightblue;
-    transition: all 0.5s;
-  }
-  
-  #btn-scissors:focus {
-    outline: none;
-  }
-  
-  #btn-scissors {
-    border-color: black;
-    color: black;
-  }
-  
-  #btn-scissors:active,
-  #btn-scissors:hover {
-    background-color: black;
-    color: white;
-  }
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 10px;
+  background-color: violet;
+  transition: all 0.5s;
+}
+
+#btn-rock:focus {
+  outline: none;
+}
+
+#btn-rock {
+  border-color: black;
+  color: black;
+}
+
+#btn-rock:active,
+#btn-rock:hover {
+  background-color: black;
+  color: white;
+}
+
+#btn-paper {
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 10px;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+#btn-paper:focus {
+  outline: none;
+}
+
+#btn-paper {
+  border-color: black;
+  color: black;
+}
+
+#btn-paper:active,
+#btn-paper:hover {
+  background-color: black;
+  color: white;
+}
+
+#btn-scissors {
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 10px;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+#btn-scissors:focus {
+  outline: none;
+}
+
+#btn-scissors {
+  border-color: black;
+  color: black;
+}
+
+#btn-scissors:active,
+#btn-scissors:hover {
+  background-color: black;
+  color: white;
+}
 
 /*result and social media*/
 .result-display {
-    color: deeppink;
-    font-size: 0.5rem;
-    margin-top: 5px;
-  }
- 
-  .social-networks {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-  }
+  color: deeppink;
+  font-size: 0.3rem;
+  margin-top: 3px;
+}
 
-  .social-networks i {
-    font-size: 1.5rem;
-  }
+.social-networks {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  padding: 3px;
+  margin: 35px;
+}
+
+.social-networks i {
+  font-size: 1rem;
+}
+
+#copyright {
+  color: aqua;
+  font-size: 0.3rem;
+  margin-top: 1px;
+  display: block;
+}
 }
