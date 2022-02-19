@@ -158,16 +158,14 @@ function updateScore() {
 function checkWinner() {
   if (playerScore === 10 || cpuScore === 10) {
     const winner =
-      playerScore === 10
-        ? result.textContent = "You win the game! Congratulations!"
+      playerScore === 10 ? result.textContent = "You win the game! Congratulations!"
         : result.textContent = "Game Over! You Lose!";
     return true;
   }
   return false;
 }
 
-
-// Show spinner before gameplay
+// Show spinner before gameplay area appear
 setTimeout(() => {
   loading.remove();
   spinner.style.display = 'flex';
