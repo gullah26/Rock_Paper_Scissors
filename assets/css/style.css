@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+
 /*--Global style-- */
 
 body {
@@ -22,7 +30,7 @@ color: white;
 }
 
 h2 {
-  color: rgb(255, 0, 0);
+  color: rgb(232, 248, 8) ;
 }
 
 /*--Game layout--*/
@@ -30,7 +38,8 @@ h2 {
 .selection-area {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 65%;
+  height: 30%;
   margin: auto;
   padding: 20px;
   border: 10px solid rgb(87, 87, 7);
@@ -41,13 +50,21 @@ h2 {
   border-top-style: double;
 }
 
+#spinner {
+  /* display: flex; */
+  display: none;
+  transform: scale(1);
+}
+
 #select-button {
   display: flex;
+  width: 35%;
+  height: 35%;
   flex-direction: column;
   border: 10px solid blue;
   border-radius: 40px;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+ 
   border-style: double;
   background-color: rgb(75, 69, 69);
 }
@@ -62,12 +79,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 30px;
+    padding: 20px;
   }
   
   img {
-    width: 100px;
-    height: 110px;
+    width: 160px;
+    height: 140px;
   }
   
   .user-area {
@@ -83,7 +100,7 @@ h2 {
   .user-score,
   .cpu-score {
     color: white;
-    margin: 50px;
+    margin: 20px;
     margin-top: 2px;
     padding: 5px;
   }

@@ -8,9 +8,9 @@
     <meta name="description"
         content=" is a game played to settle disputes between two people. Thought to be a game of chance that depends on random luck similar to flipping">
     <title>Rock Paper Scissors</title>
+    <link rel="preload" as="style" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-brands-400.woff2">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     </section>
 
     <!--game area section -->
-    <section>
+    <section >
         <!--object selection area -->
         <div class="selection-area">
             <!--user score-->
@@ -47,7 +47,7 @@
             </div>
         </div>
         <!--gameplay area-->
-        <div class="game-play">
+        <div class="game-play" id="spinner">
             <!--user section with user-choice display and score-->
             <div class="user-area">
                 <!--rock paper scissors image from https://pngset.com/download-free-png-yiceg-->
@@ -63,7 +63,9 @@
         </div>
         <!--each game play result display-->
         <div class="result-display"><span id="result-display"></span></div>
+        
     </section>
+    <img src="assets/images/spinner.gif" alt="Loading..." id="loading">
 
     <!--footer section which contains social media links and copy right-->
     <section>
@@ -96,9 +98,9 @@
             </div>
         </footer>
     </section>
-    <script src="assets/js/script.js"></script>
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/d4474c69b6.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

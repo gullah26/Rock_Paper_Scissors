@@ -7,6 +7,8 @@ const playerImage = document.getElementById("player-image");
 const cpuImage = document.getElementById("cpu-image");
 const possibleSelections = ["Rock", "Paper", "Scissors"];
 const result = document.getElementById("result-display");
+const spinner = document.getElementById("spinner");
+const loading = document.getElementById('loading');
 
 /*
 *declared variable to 
@@ -163,3 +165,10 @@ function checkWinner() {
   }
   return false;
 }
+
+
+// Show spinner before gameplay
+setTimeout(() => {
+  loading.remove();
+  spinner.style.display = 'flex';
+}, 3000);
