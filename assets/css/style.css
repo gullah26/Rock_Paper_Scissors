@@ -1,132 +1,344 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
-  font-display: swap;
-}
-
-/*--Global style-- */
-
 body {
-  background-color: black;
-  font-family: "Press Start 2P", cursive;
+  box-sizing: border-box;
   text-align: center;
-  color: white;
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /*--Heading--*/
-
-.heading {
+h1 {
+  font-size: 25px;
   text-align: center;
-  font-size: 1.5rem;
-  color: red;
-}
-
-.heading i {
-color: white;
+  color: rgb(0, 255, 76);
 }
 
 h2 {
-  color: rgb(232, 248, 8) ;
+  font-size: 16px;
+  color: rgb(204, 8, 248);
+  margin: 40px;
 }
 
 /*--Game layout--*/
-
 .selection-area {
   display: flex;
-  justify-content: center;
-  width: 65%;
-  height: 30%;
+  width: 80%; 
+  height: 200px;
   margin: auto;
-  padding: 20px;
-  border: 10px solid rgb(87, 87, 7);
-  border-radius: 40px;
+  justify-content: center;
+  align-content: center;  
+  border: 10px solid rgb(244, 244, 68, 0.2);
+  border-radius: 100px;
   border-left-style: dotted;
   border-right-style: dotted;
   border-bottom-style: double;
   border-top-style: double;
 }
 
+/* spinner picture when game is loading */
 #spinner {
-  /* display: flex; */
   display: none;
   transform: scale(1);
 }
 
 #select-button {
   display: flex;
-  width: 35%;
-  height: 35%;
   flex-direction: column;
+  width: 25%;
+  height: 120px;
   border: 10px solid blue;
-  border-radius: 40px;
-  padding: 10px;
- 
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 1em; 
   border-style: double;
-  background-color: rgb(75, 69, 69);
+  background-color: rgb(64, 18, 18);
 }
 
 #select-button p {
-  font-size: 1rem;
-  color: springgreen;
+  font-size: 15px;
+  padding: 0.5em;
+  color: rgb(217, 255, 0);
 }
 
 /*game play and score area*/
 .game-play {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 1.5em;
   }
   
   img {
-    width: 160px;
-    height: 140px;
+    width: 150px;
+    height: 120px;
   }
   
-  .user-area {
-    display: flex;
-    margin-right: 50px;
-  }
-  
-  .cpu-area {
-    display: flex;
-    margin-left: 50px;
-  }
   
   .user-score,
   .cpu-score {
     color: white;
-    margin: 20px;
-    margin-top: 2px;
-    padding: 5px;
+    margin: auto;
+    padding: 10px;
   }
   
   .user-score span {
     color: greenyellow;
-    font-size: 1rem;
+    font-size: 18px;
+    margin: auto;
+    padding: auto;
   }
   
   .user-score p {
     color: orange;
-    font-size: 1rem;
+    font-size: 18px;
     border: 2px solid white;
     border-radius: 15px;
+    margin: auto;
     padding: 10px;
   }
   
   .cpu-score span {
     color: red;
+    font-size: 18px;
+    margin: auto;
+    padding: auto;
   }
   
   .cpu-score p {
     color: rgb(255, 255, 255);
-    font-size: 1rem;
-    border: 2px solid rgb(96, 16, 170);
+    font-size: 18px;
+    border: 2px solid white;
     border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /*--buttons--*/
+
+  #btn-hint {
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    border: 5px solid blue;
+    border-style: outset;
+    padding: 2px;
+    margin: auto;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+
+#btn-rock {
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    border: 5px solid blue;
+    border-style: outset;
+    padding: 2px;
+    margin: auto;
+    background-color: violet;
+    transition: all 0.5s;
+  }
+  
+  #btn-rock:focus {
+    outline: none;
+  }
+  
+  #btn-rock {
+    border-color: black;
+    color: black;
+  }
+  
+  #btn-rock:active,
+  #btn-rock:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #btn-paper {
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    border: 5px solid blue;
+    border-style: outset;
+    padding: 2px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+  }
+  
+  #btn-paper:focus {
+    outline: none;
+  }
+  
+  #btn-paper {
+    border-color: black;
+    color: black;
+  }
+  
+  #btn-paper:active,
+  #btn-paper:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #btn-scissors {
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    border: 5px solid blue;
+    border-style: outset;
+    padding: 2px;
+    margin: auto;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+  #btn-scissors:focus {
+    outline: none;
+  }
+  
+  #btn-scissors {
+    border-color: black;
+    color: black;
+  }
+  
+  #btn-scissors:active,
+  #btn-scissors:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  #copyright {
+    color: aqua;
+    font-size: 1rem;
+  }
+  
+  /* Media queries for responsiveness on different devices */
+/*for medium screen (tablets and ipads)*/
+
+@media screen and (max-width: 810px) {
+body {
+    width:100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+/*--Heading--*/
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(0, 255, 76);
+  margin: auto;
+  padding: 1em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: rgb(204, 8, 248);
+  margin: 40px;
+}
+
+/*--Game layout--*/
+.selection-area {
+  display: flex;
+  width: 90%; 
+  height: 200px;
+  margin: auto;
+  justify-content: center;
+  align-content: center;  
+  border: 10px solid rgb(244, 244, 68, 0.2);
+  border-radius: 100px;
+  border-left-style: dotted;
+  border-right-style: dotted;
+  border-bottom-style: double;
+  border-top-style: double;
+}
+
+/* spinner picture when game is loading */
+#spinner {
+  display: none;
+  transform: scale(1);
+}
+
+#select-button {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 120px;
+  border: 10px solid blue;
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 0.5em; 
+  border-style: double;
+  background-color: rgb(64, 18, 18);
+}
+
+#select-button p {
+  font-size: 1rem;
+  padding: 0.5em;
+  color: rgb(217, 255, 0);
+}
+
+/*game play and score area*/
+.game-play {
+  width: 50%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 1.5em;
+  }
+  
+  img {
+    width: 90%;
+    height: 150px;
+
+  }
+  
+  
+  .user-score,
+  .cpu-score {
+    color: white;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .user-score span {
+    color: greenyellow;
+    font-size: 1rem;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .user-score p {
+    color: #ffa500;
+    font-size: 0.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .cpu-score span {
+    color: red;
+    font-size: 1rem;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .cpu-score p {
+    color: rgb(255, 255, 255);
+    font-size: 0.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: auto;
     padding: 10px;
   }
   
@@ -136,8 +348,10 @@ h2 {
     width: 60px;
     height: 30px;
     border-radius: 10px;
-    padding: 1px;
-    margin: 0 2px;
+    border: 5px solid blue;
+    border-style: outset;
+    padding: 2px;
+    margin: auto;
     background-color: violet;
     transition: all 0.5s;
   }
@@ -161,8 +375,10 @@ h2 {
     width: 60px;
     height: 30px;
     border-radius: 10px;
-    padding: 1px;
-    margin: 0 2px;
+    border: 5px solid blue;
+    border-style: outset;
+    padding: 2px;
+    margin: auto;
     background-color: rgb(255, 255, 255);
     transition: all 0.5s;
   }
@@ -186,8 +402,10 @@ h2 {
     width: 60px;
     height: 30px;
     border-radius: 10px;
-    padding: 1px;
-    margin: 0 2px;
+    border: 5px solid blue;
+    border-style: outset;
+    padding: 2px;
+    margin: auto;
     background-color: lightblue;
     transition: all 0.5s;
   }
@@ -205,167 +423,132 @@ h2 {
   #btn-scissors:hover {
     background-color: black;
     color: white;
-  }
-
-/*result and social media*/
-.result-display {
-    color: deeppink;
-  }
-  
-  .social-networks {
-    text-align: center;    
-    padding: 5px;
-  }
-  
-  .social-networks > li {
-    display: inline;    
-    align-items: center;
-
-   
-  }
-  
-  .social-networks i {
-    font-size: 1.5rem;
-    color: #ffffff;
-  }
-  
-  .social-media-links {
-    justify-content: flex-end;
-    margin-top: 40px;
-    
-  }
+  }  
   
   #copyright {
     color: aqua;
     font-size: 0.5rem;
   }
   
-  /* Media queries for responsiveness on different devices */
-/*for screens of 1200px */
-@media screen and (max-width: 1200px) {
+}
 
+
+/*for smaller screen and down (phones)*/
+
+@media screen and (max-width: 390px) {  
   html, body {
       width:100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
   }
-
-  img {
-      width: 70%;
-  }
-
-  .social-networks i {
-      font-size: 2rem;
-      padding: 1.5em;    
-  }
-}
-
-/*for medium screen (tablets and ipads)*/
-
-@media screen and (max-width: 810px) {
-body {
-    width:95%;
-}
-
 /*--Heading--*/
-
-.heading {
+h1 {
+  font-size: 0.5rem;
   text-align: center;
-  font-size: 1.5rem;
-  color: red;
-  margin: 2em;
+  color: rgb(0, 255, 76);
+  padding: 1em;
+}
+
+h2 {
+  font-size: 1rem;
+  color: rgb(204, 8, 248);
+  margin: 30px;
 }
 
 /*--Game layout--*/
+.selection-area { 
+  border: none;
+}
 
-.selection-area {
-  display: flex;
-  justify-content: center;
-  border: 10px solid rgb(87, 87, 7);
-  border-radius: 20px;
-  border-left-style: dotted;
-  border-right-style: dotted;
-  border-bottom-style: double;
-  border-top-style: double;
+/* spinner picture when game is loading */
+#spinner {
+  display: none;
+  transform: scale(1);
 }
 
 #select-button {
+  display: flex;
   flex-direction: column;
-  border: 10px solid blue;
-  background-color: rgb(65, 59, 59);
-  border-radius: 40px;
-  padding: 10px;
-  margin: 10px;
-  border-style: double;
+  width: 100%;
+  height: 180px;
+  border: none;
+  margin: auto;
+  padding: 1em; 
 }
 
 #select-button p {
-  font-size: 1.5rem;
-  color: springgreen;
+  font-size: 0.5rem;
+  padding: 0.5em;
+  color: rgb(217, 255, 0);
 }
 
 /*game play and score area*/
 .game-play {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 30px;
+  width: 80%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 1em;
   }
   
   img {
-    width: 100%;
+    max-width: 40%;
+    height: 80px;
 
   }
   
-  .user-area {
-    display: flex;
-  }
-  
-  .cpu-area {
-    display: flex;
-  }
   
   .user-score,
   .cpu-score {
     color: white;
-    margin-top: 2px;
     padding: 10px;
+    margin: auto;
   }
   
   .user-score span {
     color: greenyellow;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
+    margin: auto;
+    padding: auto;
   }
   
   .user-score p {
     color: orange;
-    font-size: 1rem;
+    font-size: 0.5rem;
     border: 2px solid white;
     border-radius: 15px;
-    padding: 10px;
+    margin: auto;
+    padding: 5px;
   }
   
   .cpu-score span {
     color: red;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
+    margin: auto;
+    padding: auto;
   }
   
   .cpu-score p {
-    color: white;
-    font-size: 1rem;
+    font-size: 0.5rem;
     border: 2px solid white;
     border-radius: 15px;
-    padding: 10px;
+    margin: auto;
+    padding: 5px;
   }
   
   /*--selection buttons--*/
 
 #btn-rock {
-    width: 60px;
-    height: 30px;
-    border-radius: 10px;
-    padding: 2px;
-    margin: 5px;
-    background-color: violet;
-    transition: all 0.5s;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid blue;
+  border-style: outset;
+  padding: 5px;
+  margin: 10px;
+  background-color: violet;
+  transition: all 0.5s;
   }
   
   #btn-rock:focus {
@@ -386,10 +569,12 @@ body {
   #btn-paper {
     width: 60px;
     height: 30px;
-    border-radius: 10px;
-    padding: 2px;
-    margin: 5px;
-    background-color: white;
+    border-radius: 15px;
+    border: 2px solid blue;
+    border-style: outset;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
     transition: all 0.5s;
   }
   
@@ -411,9 +596,11 @@ body {
   #btn-scissors {
     width: 60px;
     height: 30px;
-    border-radius: 10px;
-    padding: 2px;
-    margin: 5px;
+    border-radius: 15px;
+    border: 2px solid blue;
+    border-style: outset;
+    padding: 5px;
+    margin: 10px;
     background-color: lightblue;
     transition: all 0.5s;
   }
@@ -432,211 +619,11 @@ body {
     background-color: black;
     color: white;
   }
-
-/*result and social media*/
-.result-display {
-    color: deeppink;
-  }
-  
-  .social-networks {
-    text-align: center;    
-    padding: 5px;
-  }
-  
-  .social-networks > li {
-    display: inline;    
-    align-items: center;
-    border: 1px solid white;   
-  }
-
-  
-  .social-networks i {
-    font-size: 1.5rem;
-    color: #ffffff;
-  }
-  
   
   
   #copyright {
     color: aqua;
-    font-size: 1rem;
+    font-size: 0.3rem;
   }
   
-}
-
-
-/*for smaller screen and down (phones)*/
-
-@media screen and (max-width: 390px) {  
-  body {
-    width:100%;
-    overflow-y:hidden;
-    overflow-x:hidden;
-}
-/*--Heading--*/
-
-.heading{
-text-align: center;
-font-size: 0.5rem;
-color: red;
-}
-
-h2 {
-font-size: 0.3rem;
-}
-/*--Game layout--*/
-
-.selection-area {
-border: none;
-}
-
-#select-button p {
-font-size: 0.3rem;
-color: springgreen;
-
-}
-
-#select-button {
-display: flex; 
-
-}
-/*game play and score area*/
-.game-play {
-  justify-content: center;
-  align-items: center;
-}
-
-img {
-  width: 100px;
-  height: 50px;
-}
-
-.user-score span {
-  color: greenyellow;
-  font-size: 0.5rem;
-}
-
-.user-score p {
-  color: orange;
-  font-size: 0.4rem;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 3px;
-}
-
-.cpu-score span {
-  color: red;
-  font-size: 0.5rem;
-}
-
-.cpu-score p {
-  color: white;
-  font-size: 0.4rem;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 3px;
-}
-
-/*--selection buttons--*/
-
-#btn-rock {
-  width: 50px;
-  height: 20px;
-  border-radius: 5px;
-  padding: 1px;
-  font-size: 10px;
-  background-color: violet;
-  transition: all 0.5s;
-}
-
-#btn-rock:focus {
-  outline: none;
-}
-
-#btn-rock {
-  border-color: black;
-  color: black;
-}
-
-#btn-rock:active,
-#btn-rock:hover {
-  background-color: black;
-  color: white;
-}
-
-#btn-paper {
-  width: 50px;
-  height: 20px;
-  border-radius: 5px;
-  padding: 1px;
-  font-size: 10px;
-  background-color: white;
-  transition: all 0.5s;
-}
-
-#btn-paper:focus {
-  outline: none;
-}
-
-#btn-paper {
-  border-color: black;
-  color: black;
-}
-
-#btn-paper:active,
-#btn-paper:hover {
-  background-color: black;
-  color: white;
-}
-
-#btn-scissors {
-  width: 50px;
-  height: 20px;
-  border-radius: 5px;
-  padding: 1px;
-  font-size: 10px;
-  background-color: lightblue;
-  transition: all 0.5s;
-}
-
-#btn-scissors:focus {
-  outline: none;
-}
-
-#btn-scissors {
-  border-color: black;
-  color: black;
-}
-
-#btn-scissors:active,
-#btn-scissors:hover {
-  background-color: black;
-  color: white;
-}
-
-/*result and social media*/
-.result-display {
-  color: deeppink;
-  font-size: 0.3rem;
-  margin-top: 3px;
-}
-
-.social-networks {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  padding: 3px;
-  margin: 35px;
-}
-
-.social-networks i {
-  font-size: 1rem;
-}
-
-#copyright {
-  color: aqua;
-  font-size: 0.3rem;
-  margin-top: 1px;
-  display: block;
-}
 }

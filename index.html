@@ -8,9 +8,7 @@
     <meta name="description"
         content=" is a game played to settle disputes between two people. Thought to be a game of chance that depends on random luck similar to flipping">
     <title>Rock Paper Scissors</title>
-    <link rel="preload" as="style" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-brands-400.woff2">
 </head>
 
 <body>
@@ -19,7 +17,9 @@
     <section>
         <!--Game Heading-->
         <header>
-            <h1 class="heading">Rock Paper Scissors</h1>
+            <h1 class="heading">ROCK, PAPER, SCISSORS</h1>
+            <!--each game play result display-->
+        <p class="result-display"><span id="result-display"></span></p>
         </header>
     </section>
 
@@ -32,6 +32,7 @@
                 <p>1P score</p><br><span id="user-score">0</span>
             </div>
             <div id="select-button">
+                <button id="btn-hint" onclick="aboutGame()">Hint!</button>
                 <div><p>Click! item</p></div>
                 <!--credit: code institue Project  Portfolio 2 Portfolio Project Scope video-->
                 <div><button aria-label="rock" data-choice="0" class="buttons" id="btn-rock">Rock</button>
@@ -49,57 +50,29 @@
         <!--gameplay area-->
         <div class="game-play" id="spinner">
             <!--user section with user-choice display and score-->
-            <div class="user-area">
+            
                 <!--rock paper scissors image from https://pngset.com/download-free-png-yiceg-->
-                <img id="player-image" src="assets/images/rps.png" alt="rock paper scissors">
-            </div>
+                <img id="player-image" src="assets/images/rps.webp" alt="rock paper scissors">
+
             <h2>VS</h2>
             <!--computer section with computer-choice display and score https://pngset.com/download-free-png-yiceg-->
-            <div class="cpu-area">
-                <img id="cpu-image" src="assets/images/rps.png" alt="rock paper scissors">
+           
+                <img id="cpu-image" src="assets/images/rps.webp" alt="rock paper scissors">
                 
-            </div>
+         
 
         </div>
-        <!--each game play result display-->
-        <div class="result-display"><span id="result-display"></span></div>
+        
         
     </section>
     <img src="assets/images/spinner.gif" alt="Loading..." id="loading">
 
-    <!--footer section which contains social media links and copy right-->
+    <!--footer section which contains copyright-->
     <section class="footer">
-        <footer>
-            <div class="social-media-links">
-
-                <ul class="social-networks">
-                    <li>
-                        <a href="https://facebook.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Facebook page (opens in a new tab)"><i
-                                class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Twitter page (opens in a new tab)"><i
-                                class="fab fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://youtube.com" target="_blank" rel="noopener"
-                            aria-label="Visit our YouTube page (opens in a new tab)"><i
-                                class="fab fa-youtube-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Instagram page (opens in a new tab)"><i
-                                class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
-                <h4 id="copyright">Copyright &#169; 2022 NightFury&#8482;</h4>
-            </div>
+        <footer>            
+               <p id="copyright">Copyright &#169; 2022 NightFury&#8482;</p>
         </footer>
     </section>
-    <!-- font awesome script -->
-    <script src="https://kit.fontawesome.com/d4474c69b6.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

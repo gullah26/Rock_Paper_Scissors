@@ -170,3 +170,15 @@ setTimeout(() => {
   loading.remove();
   spinner.style.display = 'flex';
 }, 3000);
+
+/*function that tells you more
+*about the game the game.
+*/
+function aboutGame() {
+  alert ("The rock is a closed fist; paper is a flat hand with" + 
+  " " + "fingers and thumb extended and the palm facing downward;" + " " + 
+  "and scissors is a fist with the index and middle fingers fully extended "+" " + 
+  "toward the opposing player. "+" " + "Rock wins against scissors; "+" " + 
+  "paper wins against rock; and scissors wins against paper.");
+}
+
