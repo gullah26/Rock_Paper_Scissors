@@ -23,6 +23,10 @@ h2 {
 	margin: 40px;
 }
 
+h3 {
+	color: yellow;
+}
+
 
 /*--Game layout--*/
 
@@ -219,7 +223,7 @@ img {
 	color: white;
 }
 
-#copyright {
+.rules {
 	color: aqua;
 	font-size: 12px;
 	margin: auto;
@@ -249,6 +253,10 @@ img {
 		font-size: 16px;
 		color: rgb(204, 8, 248);
 		margin: 30px;
+	}
+
+	h3 {
+		color: yellow;
 	}
 	/*--Game layout--*/
 	.selection-area {
@@ -406,7 +414,7 @@ img {
 		background-color: black;
 		color: white;
 	}
-	#copyright {
+	.rules {
 		color: aqua;
 		font-size: 14px;
 		margin: auto;
@@ -438,6 +446,10 @@ img {
 		font-size: 12px;
 		color: rgb(204, 8, 248);
 		margin: 20px;
+	}
+
+	h3 {
+		color: yellow;
 	}
 	/*--Game layout--*/
 	.selection-area {
@@ -578,7 +590,7 @@ img {
 		background-color: black;
 		color: white;
 	}
-	#copyright {
+	.rules {
 		color: aqua;
 		font-size: 12px;
 		margin: auto;
