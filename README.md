@@ -1,10 +1,10 @@
 # Rock Paper Scissors #
 
-* Wellness haven website is built for users seeking answers to numerous wellness and health tips. It gives it's users the opportunity to connect to different health coaches around the world.
+* The Rock Paper Scissors game is a hand gensture game played between two people where the rock is a clench fist; paper is a hand raised open palm gensture, but in horizontal position with fingers and thumb extended and the palm facing downward; and scissors is a fist with the index and middle fingers fully extended toward the opposing player. In this game the possibilities are Rock wins against scissors; Paper wins against Rock; and Scissors wins against paper.
 
 * This website makes it easier for users to find relevant informations about the cause and fix of their unhealthiness and also help them to identfy analyse and proofer professional solutions with wellness and healthy life hacks that could turn around their fitness to something they can be proud of.
 
-![rendering on all screen sizes](/screenshot/paper.png)
+![rendering on all screen sizes](/screenshot/thegame.png)
 
 ## Features
 _______________________________
