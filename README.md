@@ -4,7 +4,7 @@
 
 * This website makes it easier for users to find relevant informations about the cause and fix of their unhealthiness and also help them to identfy analyse and proofer professional solutions with wellness and healthy life hacks that could turn around their fitness to something they can be proud of.
 
-![rendering on all screen sizes](/screenshot/thegame.png)
+![rendering on all screen sizes](../Rock_Paper_Scissors/doc/responsiveness.png)
 
 ## Features
 _______________________________
