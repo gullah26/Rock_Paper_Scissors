@@ -60,7 +60,7 @@ _______________________________
 
 
 
-### Footer Section
+## Footer Section
 	
 * The section consists of the rules of the game.
 
@@ -75,6 +75,15 @@ _______________________________
 
 * I confirm that all fonts and images on each section of the page is readable on all tested screens: the header, buttons, footer.
 
+## Tools used
+
+* HTML : For the webpage and schemantic structure [HTML](https://www.w3schools.com/html/ "w3schools")
+
+* CSS: For styling and how the page should display [CSS](https://www.w3schools.com/css/ "w3schools")
+
+* JAVASCRIPT: It makes the website interactive and user responsive [Javascript](https://www.w3schools.com/js/ "w3schools")
+
+
 ## Bugs
 * No bugs was found.
 
@@ -82,18 +91,20 @@ _______________________________
 ## Validator Testing.
 
 * HTML
-	* The codes were tested on W3C Validator and no error was found.
+	* The codes were tested on W3C Validator and no error was found [W3C HTML Validator](https://validator.w3.org/nu/#textarea "W3C HTML Validator").
 
 * CSS
-	* The codes were tested on Jigsaw Css Validator and no error was found.
+	* The codes were tested on Jigsaw Css Validator and no error was found [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator#css "W3C CSS Validator") 
+	![W3C Jigsaw Css Validator](assets/images/css.png).
 
 * JavaScript
-	* The codes were tested on Jshint Javascript  Validator and no error was found.
+	* The codes were tested on Jshint Javascript  Validator and no error was found [Jshint Javascript Validator](https://jshint.com/ "jshint javascript Validator")
+	![JSHint JavaScript Validator](assets/images/jshint.png)..
 
 * Accessibility
 	 * To meet the accessibility requirment, an easy to read fonts and colors are chosen, and was tested through lighthouse report in devtools.
 
-![Light house report](assets/images/lighthouse.png)
+![Light house report](assets/images/lighthouse.png).
 
 
 ## unfixed Bugs

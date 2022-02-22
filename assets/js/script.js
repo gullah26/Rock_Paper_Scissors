@@ -60,7 +60,6 @@
   */
  
  function compareResults(playerChoice, cpuChoice) {
-   const gamePlay = `${playerChoice} vs ${cpuChoice}`;
    // to check each player and computer conditions
    switch (playerChoice) {
      case 0:
@@ -152,8 +151,7 @@
   */
  function checkWinner() {
    if (playerScore === 10 || cpuScore === 10) {
-     const winner =
-       playerScore === 10 ? result.textContent = "You win the game! Congratulations!" :
+       playerScore === 10 ? result.textContent = "Congratulations! You won the game! " :
        result.textContent = "Game Over! You Lose!";
      return true;
    }
