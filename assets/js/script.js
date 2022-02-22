@@ -1,7 +1,5 @@
-/*
- *variable declaration for DOM elements
- *possible selections and results
- */
+//variable declaration for DOM elements possible selections and results.
+ 
  const buttons = document.querySelectorAll(".buttons");
  const playerImage = document.getElementById("player-image");
  const cpuImage = document.getElementById("cpu-image");
@@ -10,11 +8,8 @@
  const spinner = document.getElementById("spinner");
  const loading = document.getElementById('loading');
  
- /*
-  *declared variable to 
-  *display how many games 
-  *are won.
-  */
+ //declared variable to display how many games are won.
+
  let playerScore = 0;
  let cpuScore = 0;
  
@@ -165,7 +160,7 @@
    return false;
  }
  
- // Show spinner before gameplay area appear
+ // Show spinner before gameplay area appear 
  setTimeout(() => {
    loading.remove();
    spinner.style.display = 'flex';
